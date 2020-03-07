@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History facts about SpaceX</title>
+</head>
+<body>
+<h1> SpaceX history details:</h1>
+<p>
+
+
+
+
+</p>
+<br>
+<tr th:each="history : ${histories}">
+
+
+    Id: <td th:text="${history.getId()}"/>
+    <br>
+
+    Titel: <td th:text="${history.getTitle()}"/>
+    <br>
+
+    Flight number: <td th:text="${history.getFlightNumber()}"/>
+    <br>
+
+    Details:  <td th:text="${history.getDetails()}"/>
+    <br>
+    <p>-------------------------------------</p>
+
+
+
+</body>
+</html>
